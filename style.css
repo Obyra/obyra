@@ -1,0 +1,374 @@
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #2e2e2e;
+  line-height: 1.6;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Topbar */
+.topbar {
+  background-color: #1A374D;
+  padding: 10px 40px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.topbar-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-links li {
+  position: relative;
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.nav-links li::before {
+  content: '•';
+  color: black;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+/* Header */
+header {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 30px 20px;
+  position: relative;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.logo {
+  width: 150px;
+  background-color: #2E2E2E;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.texto-header h1 {
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.texto-header p {
+  font-size: 18px;
+  color: white;
+  margin-top: 0;
+}
+
+/* Secciones generales */
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+
+section ul li::before {
+  content: '✔️ ';
+  color: #1A374D;
+  margin-right: 6px;
+}
+
+.que-hacemos {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: 60px auto;
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.titulo-bloque {
+  background-color: #1A374D;
+  color: #ffffff;
+  padding: 15px 0;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.que-hacemos p {
+  margin-bottom: 16px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* Botones */
+.btn {
+  background-color: #1A374D;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #163147;
+}
+
+/* Formulario */
+form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: left;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  background-color: #2e2e2e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+/* Sección proveedores */
+.proveedores {
+  background-color: #f3f3f3;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 3px solid #1A374D;
+  border-bottom: 3px solid #1A374D;
+  animation: fadeInUp 1s ease-out;
+}
+
+.servicios {
+  padding: 50px 20px;
+  margin: 60px auto;
+  max-width: 800px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.servicios h2 {
+  background-color: #1A374D;
+  color: #ffffff;
+  padding: 15px 0;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.servicios-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.servicios-lista li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 14px;
+  font-size: 18px;
+  color: #333;
+}
+
+.servicios-lista li::before {
+  content: '✔';
+  color: #1A374D;
+  font-size: 18px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Botón WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1A374D;
+  padding: 14px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-icon {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .texto-header h1 {
+    font-size: 40px;
+  }
+
+  .texto-header p {
+    font-size: 16px;
+  }
+
+  .titulo-bloque h2,
+  .servicios h2,
+  .solicita-asesoria h2 {
+    font-size: 22px;
+  }
+
+  .servicios-lista li {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  form {
+    padding: 20px;
+  }
+}
+
+/* Estilo login */
+.login-section {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  min-height: 70vh;
+}
+
+.login-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #2e2e2e;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.login-container .btn {
+  background-color: #1A374D;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container .btn:hover {
+  background-color: #163147;
+}
+
+.login-ayuda {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.login-ayuda a {
+  color: #2e2e2e;
+  text-decoration: underline;
+}
