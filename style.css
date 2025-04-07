@@ -147,6 +147,33 @@ section ul li::before {
   line-height: 1.6;
 }
 
+.quienes-somos {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: 60px auto;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  animation: fadeInUp 1s ease-out;
+}
+
+.quienes-somos p {
+  margin-bottom: 16px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.quienes-somos .titulo-bloque {
+  background-color: #1A374D;
+  color: #ffffff;
+  padding: 15px 0;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
 /* Botones */
 .btn {
   background-color: #1A374D;
